@@ -9,7 +9,10 @@ k = np.zeros(4)
 q = np.zeros(4)
 
 
-phi=1
+Amp = m.pi/6
+
+
+phi=Amp
 z=0
 t=0
 
@@ -19,7 +22,7 @@ l=10
 
 
 def ADSolve(t):
-    return 1*m.cos(m.sqrt(g/l)*t)
+    return Amp*m.cos(m.sqrt(g/l)*t)
 
 def f1(t,p,z):
     return z
@@ -48,3 +51,7 @@ while t < 20:
 plt.plot(T,NPhi)
 plt.plot(T,APhi)
 plt.show()
+
+
+
+
