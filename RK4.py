@@ -9,7 +9,7 @@ k = np.zeros(4)
 q = np.zeros(4)
 
 
-Amp = m.pi/6
+Amp = m.pi/3
 
 
 phi=Amp
@@ -48,8 +48,9 @@ while t < 20:
 
 
 
-plt.plot(T,NPhi)
-plt.plot(T,APhi)
+plt.plot(T,NPhi,label='Аналитческое решение')
+plt.plot(T,APhi,label='Численное решение')
+plt.legend(loc=2)
 plt.show()
 
 
